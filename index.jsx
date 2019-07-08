@@ -1,4 +1,9 @@
-import * as React from "react";
+import React from "react";
 import { render } from "react-dom";
+import Routes from "./config/Routes";
 
-render(<div>Hello STEM 2019</div>, document.getElementById("index"));
+function Stem2019() {
+  return <Routes />;
+}
+
+render(<Stem2019 />, document.getElementById("index"));
